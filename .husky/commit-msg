@@ -1,1 +1,0 @@
-bun dlx commitlint --edit $1
