@@ -1,5 +1,6 @@
 'use server';
 
+import type { UserModel } from '@/lib/models/user';
 import { createClient } from '@/lib/utils/supabase/server';
 import { redirect } from 'next/navigation';
 
@@ -15,5 +16,5 @@ export async function getSession() {
 
   if (!session) redirect('/login');
 
-  return session;
+  return { session, user: session.user.user_metadata as UserModel };
 }
