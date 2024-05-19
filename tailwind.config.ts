@@ -48,7 +48,7 @@ const config: Config = {
         },
       },
       height: {
-        main: 'calc(100vh - 80px)',
+        main: 'calc(100vh - 70px)',
       },
       keyframes: {
         'accordion-down': {
